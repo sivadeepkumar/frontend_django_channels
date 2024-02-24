@@ -9,9 +9,9 @@ import NotFound from './Components/NotFound';
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route exact path="/login" component={Login} />
-      <Route exact path="/registration" component={Registration} />
-      <Route component={NotFound}/>
+      <Route exact path="/login" Component={Login} />
+      <Route exact path="/registration" Component={Registration} />
+      <Route path="*"  Component={NotFound}/>
     </Routes>
   </BrowserRouter>
 );
