@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 
 const Registration = () => {
 
-
-    
     const BASE_URL = "http://127.0.0.1:8000/";
     const END_POINT= `register/`;
     let total_url = BASE_URL+END_POINT

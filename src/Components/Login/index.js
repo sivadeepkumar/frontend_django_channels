@@ -54,16 +54,18 @@ const Login = () => {
 
 
     return (
-<>
-    <div className ="mt-5 text-center d-flex flex-column justify-content-start" >
+    <>
+        <div className ="mt-5 text-center d-flex flex-column justify-content-start" >
             <div className="mt-3">
             <TextField id="email" label="Enter the email" variant="outlined" onChange={e=>setForm({...useForm,email:e.target.value})} />
             </div>
             <div className="mt-3">
+
             <TextField id="password" type="password" label="Enter your password" variant="outlined" onChange={e=> setForm({...useForm,password: e.target.value})} />
             </div>
-            
-
+          
+//             <TextField id="password" type="password" label="Enter your password" variant="outlined" onChange={e=>setFormData({...formData,password:e.target.value})} />
+//             </div> 
             <div>
                 <button onClick={handleSubmitForm} className="mt-3 btn btn-primary">Login</button>
             </div>
