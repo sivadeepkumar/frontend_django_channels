@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 
 import { Link } from "react-router-dom";
 
-export default function Registration() {
+const Registration = () => {
 
 
     
@@ -55,9 +55,10 @@ export default function Registration() {
             <div>
                 <button onClick={handleFormSubmit} className="mt-3 btn btn-primary">Register</button>
             </div>
-            <Link to="/login">Go to Login
-            </Link>
+            <Link to="/login" >Login</Link>
         </div>
         </>
     )   
 }
+
+export default Registration

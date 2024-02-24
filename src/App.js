@@ -5,15 +5,23 @@ import Login from './Components/Login'; // Make sure the import is correct (case
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFound from './Components/NotFound';
-
+import Navigate from './Components/Navigate/Navigate';
+import Sidebar from './Components/master/Sidebar';
+import ChatArea from './Components/master/ChatArea';
+import Home from "./Components/Home"
 const App = () => (
   <BrowserRouter>
     <Routes>
-      <Route exact path="/login" component={Login} />
-      <Route exact path="/registration" component={Registration} />
-      <Route component={NotFound}/>
+      <Route exact path='/' Component={Home}/>
+      <Route exact path='/nagivate' Component={Navigate} />
+      <Route exact path="/login" Component={Login} />
+      <Route exact path="/register" Component={Registration} />
+      <Route path='*' Component={NotFound}/>
     </Routes>
   </BrowserRouter>
 );
 
 export default App;
+
+
+
